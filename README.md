@@ -71,11 +71,11 @@ zenml integration install mlflow -y
 
 ### 5. Configure ZenML Stack with MLflow
 For the project to run, you need to set up a ZenML stack with MLflow as both the experiment tracker and model deployer. Run the following commands to configure your stack:
-Register the MLflow experiment tracker:
+## Register the MLflow experiment tracker:
 zenml experiment-tracker register mlflow_tracker --flavor=mlflow
-Register the MLflow model deployer:
+## Register the MLflow model deployer:
 zenml model-deployer register mlflow --flavor=mlflow
-Register the ZenML stack with the experiment tracker and model deployer:
+## Register the ZenML stack with the experiment tracker and model deployer:
 zenml stack register local-mlflow-stack -a default -o default -d mlflow -e mlflow_tracker --set
 
 ### 6. Running the Project
