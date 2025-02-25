@@ -82,22 +82,24 @@ zenml stack register local-mlflow-stack -a default -o default -d mlflow -e mlflo
 Once the ZenML stack is configured, you can run the project using the training pipeline and deployment pipeline as described earlier. This setup allows ZenML to track experiments and deploy the model via MLflow.
 ⚙️ Installation & Requirements
 
-Clone this repository:
+## Clone this repository:
 git clone https://github.com/SeyiSwathhyYaganti/End-To-End_HousePricePrediction.git
 cd End-To-End_HousePricePrediction
-Install dependencies:
+## Install dependencies:
 pip install -r requirements.txt
 Set up ZenML and MLflow as described above.
-🧑‍💻 Running the Code
 
-To run the training pipeline:
+### 🧑‍💻 Running the Code
+
+## To run the training pipeline:
 python run_pipeline.py
-To run the deployment pipeline:
+## To run the deployment pipeline:
 python run_deployment.py
-📊 Visualizations and Results
+
+### 📊 Visualizations and Results
 
 The project contains detailed visualizations and performance metrics as part of the EDA and model evaluation processes. Explore the EDA.ipynb notebook for data analysis insights and the model evaluation results in the pipeline scripts.
-🔧 Technologies Used
+### 🔧 Technologies Used
 
 ZenML for MLOps and experiment tracking
 MLflow for model deployment and tracking
@@ -105,6 +107,6 @@ Scikit-learn for machine learning
 Pandas for data manipulation
 Matplotlib & Seaborn for data visualization
 Jupyter Notebooks for exploratory data analysis
-📄 Documentation
+### 📄 Documentation
 
 For detailed instructions on setting up the project, check the Installing and Setting Project.docx document.
