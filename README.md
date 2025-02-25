@@ -83,7 +83,7 @@ Once the ZenML stack is configured, you can run the project using the training p
 ⚙️ Installation & Requirements
 
 Clone this repository:
-git clone https://github.com/your-username/End-To-End_HousePricePrediction.git
+git clone https://github.com/SeyiSwathhyYaganti/End-To-End_HousePricePrediction.git
 cd End-To-End_HousePricePrediction
 Install dependencies:
 pip install -r requirements.txt
