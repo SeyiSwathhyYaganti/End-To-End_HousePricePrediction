@@ -33,3 +33,46 @@ Once you've created and activated your virtual environment, move to the next ste
 3. Install Dependencies
 After setting up the virtual environment, install the required dependencies:
 pip install -r requirements.txt
+
+4. Install ZenML Integration for MLflow
+If you are running the run_deployment.py script, you'll need to install ZenML's MLflow integration:
+
+zenml integration install mlflow -y
+5. Configure ZenML Stack with MLflow
+For the project to run, you need to set up a ZenML stack with MLflow as both the experiment tracker and model deployer. Run the following commands to configure your stack:
+Register the MLflow experiment tracker:
+zenml experiment-tracker register mlflow_tracker --flavor=mlflow
+Register the MLflow model deployer:
+zenml model-deployer register mlflow --flavor=mlflow
+Register the ZenML stack with the experiment tracker and model deployer:
+zenml stack register local-mlflow-stack -a default -o default -d mlflow -e mlflow_tracker --set
+6. Running the Project
+Once the ZenML stack is configured, you can run the project using the training pipeline and deployment pipeline as described earlier. This setup allows ZenML to track experiments and deploy the model via MLflow.
+⚙️ Installation & Requirements
+
+Clone this repository:
+git clone https://github.com/your-username/End-To-End_HousePricePrediction.git
+cd End-To-End_HousePricePrediction
+Install dependencies:
+pip install -r requirements.txt
+Set up ZenML and MLflow as described above.
+🧑‍💻 Running the Code
+
+To run the training pipeline:
+python run_pipeline.py
+To run the deployment pipeline:
+python run_deployment.py
+📊 Visualizations and Results
+
+The project contains detailed visualizations and performance metrics as part of the EDA and model evaluation processes. Explore the EDA.ipynb notebook for data analysis insights and the model evaluation results in the pipeline scripts.
+🔧 Technologies Used
+
+ZenML for MLOps and experiment tracking
+MLflow for model deployment and tracking
+Scikit-learn for machine learning
+Pandas for data manipulation
+Matplotlib & Seaborn for data visualization
+Jupyter Notebooks for exploratory data analysis
+📄 Documentation
+
+For detailed instructions on setting up the project, check the Installing and Setting Project.docx document.
