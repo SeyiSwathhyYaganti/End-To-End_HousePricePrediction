@@ -12,7 +12,7 @@ This repository provides an end-to-end solution for predicting house prices usin
 - **MLOps Integration**: Integrated ZenML for experiment tracking and model deployment using MLflow.
 
 ## 📂 Project Structure
-
+```
 Here’s a breakdown of the project structure:
 ├── Data
 │ └── archive.zip
@@ -45,7 +45,7 @@ Here’s a breakdown of the project structure:
 ├── data_evaluator.py
 ├── data_ingestion_step.py
 └── model_loader.py
-
+```
 
 ## 🛠️ ZenML Setup for Experiment Tracking & Model Deployment
 
@@ -107,6 +107,7 @@ Scikit-learn for machine learning
 Pandas for data manipulation
 Matplotlib & Seaborn for data visualization
 Jupyter Notebooks for exploratory data analysis
+
 ### 📄 Documentation
 
 For detailed instructions on setting up the project, check the Installing and Setting Project.docx document.
